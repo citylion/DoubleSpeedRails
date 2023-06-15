@@ -22,6 +22,7 @@ public class RailListener implements Listener {
         }
         Minecart minecart = (Minecart) event.getVehicle();
         if(minecart.getPassengers().size() < 1){
+            minecart.setMaxSpeed(0.4);//typical minecraft max speed;
             return;
         }
 
@@ -90,7 +91,7 @@ public class RailListener implements Listener {
     }
 
     public Vector getsafevelocity(Vector v){
-        double safescalar = 0.75;//FINE TUNE
+        double safescalar = 0.70;//FINE TUNE
 
         double tosafescalar = 1.0;//DONT CHANGE
         //this finds the fraction required to scale the max value down to safescalar.
