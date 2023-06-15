@@ -1,0 +1,4 @@
+name: RailSpeed
+version: '${project.version}'
+main: red.civ.railspeed.RailSpeed
+api-version: 1.18
